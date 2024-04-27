@@ -1,6 +1,8 @@
 import './App.css';
 import lake from "./image/lake.JPG";
 import GallaryFooter from './components/GallaryFooter';
+import body from './components/body';
+import header from './components/header';
 
 const imageData = [
   {
@@ -48,8 +50,9 @@ function App() {
           })
         }
       </div>
-      {/* adding footer component */}
       <GallaryFooter/> 
+      <body imageData={imageData}/>
+      <header/>
     </div>
   )
 }
